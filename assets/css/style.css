@@ -1182,7 +1182,7 @@ section {
 /*--------------------------------------------------------------
 # Book A Table
 --------------------------------------------------------------*/
-.dropdown-register select{
+.register-drowdown select{
   height: 44px;
   width: 100%;
   border-radius: 0;
@@ -1191,6 +1191,49 @@ section {
   font-size: 14px;
   background: #0c0b09;
   border-color: #625b4b;
+  color: #a49b89;
+}
+
+.register-terms p{
+  min-height: 200px;
+  max-height: 200px;
+  overflow-y: scroll;
+  display: block;
+  height: 44px;
+  width: 100%;
+  text-indent: 10px;
+  box-shadow: none;
+  font-size: 12px;
+  background: #0c0b09;
+  color: #a49b89;
+}
+
+.register-terms label{
+  height: 22px;
+  text-indent: 10px;
+  font-size: 14px;
+  background: #0c0b09;
+  color: #a49b89;
+}
+
+.register-terms input{
+  width: 13px;
+  height: 13px;
+  vertical-align: bottom;
+  position: relative;
+  *overflow: hidden;
+
+}
+
+#terms-checkbox{
+  padding-top: 12px;
+}
+
+.register-terms{
+  border-style: solid;
+  border-color: #625b4b;
+  margin: 5px;
+  padding: 20px;
   color: #a49b89;
 }
 
