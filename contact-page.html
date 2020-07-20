@@ -144,7 +144,27 @@
           <p>Join a program </p>
         </div>
 
+
         <form action="forms/register.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+          <div class="form-row">
+            <div class="col-lg-4 col-md-6 form-group">
+              <div class="register-drowdown">
+                <select id="programs" name="programs">
+                  <option selected disabled hidden>Choose Program</option>
+                  <option value="Soccer">Soccer</option>
+                  <option value="Wellness">Wellness</option>
+                  <option value="Active">Active</option>
+                </select>
+              </div>
+            </div>           
+          </div>
+        </form>
+
+
+
+
+
+        <form id="infoForm" action="forms/register.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
           <div class="form-row">
             <div class="col-lg-4 col-md-6 form-group">
               <input type="text" name="firstName" class="form-control" id="firstName" placeholder="Your First Name" data-rule="minlen:1" data-msg="Please enter at least 1 char">
@@ -168,39 +188,20 @@
             </div>
             <div class="col-lg-4 col-md-6 form-group">
                 <div class="register-drowdown">
-                    <select id="gender" name="gender">
-                        <option selected disabled>Your Gender</option>
+                    <select id="gender" name="gender" required>
+                        <option selected disabled hidden value="">Your Gender</option>
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
                     </select>
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 form-group">
-                <div class="register-drowdown">
-                    <select id="programs" name="programs">
-                        <option selected disabled>Choose Program</option>
-                        <option value="Soccer">Soccer</option>
-                        <option value="Wellness">Wellness</option>
-                        <option value="Active">Active</option>
-                    </select>
-                </div>
-            </div>
-
             <div class="register-terms">
               <h5>Terms and Conditions</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis, quam sed mattis sodales, sem est vestibulum lectus, quis dapibus odio odio ac mi. Donec sollicitudin leo a elit blandit mattis. Quisque molestie vel nulla quis egestas. Praesent tincidunt dignissim aliquet. In hac habitasse platea dictumst. Pellentesque augue erat, fermentum sed lectus ac, accumsan accumsan massa. Sed nulla metus, sodales nec lacinia eget, porttitor eget magna. Vivamus dictum luctus est, vel aliquam purus vulputate sed.
-  
-                Donec egestas gravida ultricies. Phasellus egestas enim et orci malesuada aliquam. Pellentesque consectetur dapibus scelerisque. Donec fermentum elit odio, et tempus tortor tincidunt fermentum. Vestibulum laoreet lectus eget urna dapibus, in elementum libero blandit. Nulla bibendum eleifend lacinia. Praesent quis ante non diam auctor tristique. Aenean ut libero a velit vestibulum placerat vel porta elit. Fusce iaculis at lectus vel pellentesque. Integer sed quam semper, sagittis risus sit amet, interdum felis. Sed viverra sagittis lacus, quis rutrum ipsum faucibus quis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In vel sapien sed elit varius ullamcorper. Sed tempus tortor eu massa fringilla, id mollis nunc tempor.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis, quam sed mattis sodales, sem est vestibulum lectus, quis dapibus odio odio ac mi. Donec sollicitudin leo a elit blandit mattis. Quisque molestie vel nulla quis egestas. Praesent tincidunt dignissim aliquet. In hac habitasse platea dictumst. Pellentesque augue erat, fermentum sed lectus ac, accumsan accumsan massa. Sed nulla metus, sodales nec lacinia eget, porttitor eget magna. Vivamus dictum luctus est, vel aliquam purus vulputate sed.
-  
-                Donec egestas gravida ultricies. Phasellus egestas enim et orci malesuada aliquam. Pellentesque consectetur dapibus scelerisque. Donec fermentum elit odio, et tempus tortor tincidunt fermentum. Vestibulum laoreet lectus eget urna dapibus, in elementum libero blandit. Nulla bibendum eleifend lacinia. Praesent quis ante non diam auctor tristique. Aenean ut libero a velit vestibulum placerat vel porta elit. Fusce iaculis at lectus vel pellentesque. Integer sed quam semper, sagittis risus sit amet, interdum felis. Sed viverra sagittis lacus, quis rutrum ipsum faucibus quis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In vel sapien sed elit varius ullamcorper. Sed tempus tortor eu massa fringilla, id mollis nunc tempor.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis, quam sed mattis sodales, sem est vestibulum lectus, quis dapibus odio odio ac mi. Donec sollicitudin leo a elit blandit mattis. Quisque molestie vel nulla quis egestas. Praesent tincidunt dignissim aliquet. In hac habitasse platea dictumst. Pellentesque augue erat, fermentum sed lectus ac, accumsan accumsan massa. Sed nulla metus, sodales nec lacinia eget, porttitor eget magna. Vivamus dictum luctus est, vel aliquam purus vulputate sed.
-  
-                Donec egestas gravida ultricies. Phasellus egestas enim et orci malesuada aliquam. Pellentesque consectetur dapibus scelerisque. Donec fermentum elit odio, et tempus tortor tincidunt fermentum. Vestibulum laoreet lectus eget urna dapibus, in elementum libero blandit. Nulla bibendum eleifend lacinia. Praesent quis ante non diam auctor tristique. Aenean ut libero a velit vestibulum placerat vel porta elit. Fusce iaculis at lectus vel pellentesque. Integer sed quam semper, sagittis risus sit amet, interdum felis. Sed viverra sagittis lacus, quis rutrum ipsum faucibus quis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In vel sapien sed elit varius ullamcorper. Sed tempus tortor eu massa fringilla, id mollis nunc tempor.
-                
-                Suspendisse ultricies cursus enim ultrices elementum. Nullam quis neque vehicula, posuere odio ut, fermentum augue. In porttitor libero sagittis dui aliquam ornare. Morbi metus ante, commodo at ex eget, ultricies auctor sem. Quisque et scelerisque dolor, varius dignissim velit. Morbi congue tristique nulla eget fermentum. Quisque vulputate, augue at suscipit porttitor, diam ipsum rutrum purus, quis faucibus ante elit sit amet est. Ut tincidunt tristique felis, quis rutrum augue tincidunt eget.</p>
-              <input type="checkbox" required name="terms">
+              <p id="termsText">
+              </p>
+              
+                <input type="checkbox" required name="terms">
               <label for="terms"> I accept the Terms and Conditions</label><br>  
             </div>
 
@@ -310,6 +311,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/register.js"></script>
 
 </body>
 
